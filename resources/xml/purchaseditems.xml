@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database>
+    <table name="purchaseditems">
+        <column name="seq">1</column>
+        <column name="orderNo">O1</column>
+        <column name="userID">Jolycca</column>
+        <column name="itemCode">P005</column>
+        <column name="itemName">Echo</column>
+        <column name="itemDesc">Earbuds</column>
+        <column name="itemPrice">80.6</column>
+        <column name="itemQuantity">3</column>
+        <column name="multipliedPrice">241.8</column>
+        <column name="created_at">2024-09-21 13:47:44</column>
+        <column name="updated_at">2024-09-21 13:47:44</column>
+    </table>
+    <table name="purchaseditems">
+        <column name="seq">2</column>
+        <column name="orderNo">O1</column>
+        <column name="userID">Jolycca</column>
+        <column name="itemCode">P004</column>
+        <column name="itemName">Laz Key</column>
+        <column name="itemDesc">Wireless Keyboard</column>
+        <column name="itemPrice">79.3</column>
+        <column name="itemQuantity">3</column>
+        <column name="multipliedPrice">237.9</column>
+        <column name="created_at">2024-09-21 13:47:44</column>
+        <column name="updated_at">2024-09-21 13:47:44</column>
+    </table>
+    <table name="purchaseditems">
+        <column name="seq">3</column>
+        <column name="orderNo">O1</column>
+        <column name="userID">Jolycca</column>
+        <column name="itemCode">P002</column>
+        <column name="itemName">Fordge</column>
+        <column name="itemDesc">Screen Protector</column>
+        <column name="itemPrice">25.5</column>
+        <column name="itemQuantity">4</column>
+        <column name="multipliedPrice">102</column>
+        <column name="created_at">2024-09-21 13:47:44</column>
+        <column name="updated_at">2024-09-21 13:47:44</column>
+    </table>
+    <table name="purchaseditems">
+        <column name="seq">4</column>
+        <column name="orderNo">O1</column>
+        <column name="userID">Jolycca</column>
+        <column name="itemCode">P003</column>
+        <column name="itemName">Eliment Mouse</column>
+        <column name="itemDesc">Wireless Mouse</column>
+        <column name="itemPrice">65.2</column>
+        <column name="itemQuantity">2</column>
+        <column name="multipliedPrice">130.4</column>
+        <column name="created_at">2024-09-21 13:47:44</column>
+        <column name="updated_at">2024-09-21 13:47:44</column>
+    </table>
+</database>

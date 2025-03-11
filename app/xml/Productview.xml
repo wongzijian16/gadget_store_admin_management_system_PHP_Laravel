@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="gadget_db" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="products">
+                CREATE TABLE `products` (
+                  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `price` decimal(8,2) NOT NULL,
+                  `stock` int(11) NOT NULL,
+                  `image_url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  `video_url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  `category_id` bigint(20) unsigned NOT NULL,
+                  `created_at` timestamp NULL DEFAULT NULL,
+                  `updated_at` timestamp NULL DEFAULT NULL,
+                  PRIMARY KEY (`id`),
+                  KEY `products_category_id_foreign` (`category_id`),
+                  CONSTRAINT `products_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'gadget_db'
+    -->
+    <database name="gadget_db">
+        <!-- Table products -->
+        <table name="products">
+            <column name="id">1</column>
+            <column name="name">Book</column>
+            <column name="description">xiaoheizi</column>
+            <column name="price">678.00</column>
+            <column name="stock">250</column>
+            <column name="image_url">uploads/Oq52LnV7dRaG8912dOe6yo0Y7NNIFNH4LVnKSeLy.jpg</column>
+            <column name="video_url">https://www.youtube.com/watch?v=i0yBgTNBq0M</column>
+            <column name="category_id">3</column>
+            <column name="created_at">2024-09-20 16:43:26</column>
+            <column name="updated_at">2024-09-21 12:15:11</column>
+        </table>
+        <table name="products">
+            <column name="id">2</column>
+            <column name="name">Vulcan GX</column>
+            <column name="description">Premium parts, 5% cash discount, 24 month 0% instalment, 48hr test, up to 3-year warranty. Unmatched quality and branded components. ILLEGEAR custom laptops: crafted to perfection. 48 Hours Burn-in Test。14 Years of Excellence。1-to-1 PC Part Exchange。</column>
+            <column name="price">17788.00</column>
+            <column name="stock">55</column>
+            <column name="image_url">uploads/LeWAOEIPAE3Vk6G4EBP6hMsi9K7bhErMdjLFioR1.jpg</column>
+            <column name="video_url">https://youtu.be/DEZgpWFfrTg?si=1Bnex0biux8C664Z</column>
+            <column name="category_id">1</column>
+            <column name="created_at">2024-09-20 16:45:33</column>
+            <column name="updated_at">2024-09-21 11:50:10</column>
+        </table>
+        <table name="products">
+            <column name="id">4</column>
+            <column name="name">Iphone 166</column>
+            <column name="description">hahahahha</column>
+            <column name="price">3456.00</column>
+            <column name="stock">15</column>
+            <column name="image_url">uploads/265mSZrQwGfHXWzYbThAvxU5ZRW3CWoP0jG49Fbw.jpg</column>
+            <column name="video_url">https://youtu.be/Rl1R_UfQLkA?si=93cEhKDhWSk67oII</column>
+            <column name="category_id">1</column>
+            <column name="created_at">2024-09-20 17:09:46</column>
+            <column name="updated_at">2024-09-21 13:00:05</column>
+        </table>
+        <table name="products">
+            <column name="id">7</column>
+            <column name="name">Gundum Unicorn</column>
+            <column name="description">Mobile Suit Gundam Unicorn RE:0096</column>
+            <column name="price">1776.00</column>
+            <column name="stock">3</column>
+            <column name="image_url">uploads/XS321A56pvVsEsLHXxZevCyAkJvBKd8IPskX7J6m.jpg</column>
+            <column name="video_url">https://youtu.be/RL1y1QVKuZo?si=ZsKpzreuEWk2Z87N</column>
+            <column name="category_id">1</column>
+            <column name="created_at">2024-09-21 13:40:32</column>
+            <column name="updated_at">2024-09-21 13:40:51</column>
+        </table>
+        <table name="products">
+            <column name="id">8</column>
+            <column name="name">YUGIOH</column>
+            <column name="description">card game</column>
+            <column name="price">30.00</column>
+            <column name="stock">6786</column>
+            <column name="image_url">uploads/gdva1Km5L9TM8pNwrrisKqxrDKFQhqSHZoQnzYcI.jpg</column>
+            <column name="video_url">https://youtu.be/hO5vYxmUwJM?si=wD9yCcQJ14T805H_</column>
+            <column name="category_id">3</column>
+            <column name="created_at">2024-09-21 13:59:11</column>
+            <column name="updated_at">2024-09-21 16:13:06</column>
+        </table>
+    </database>
+</pma_xml_export>
